@@ -1,11 +1,10 @@
-# TinyUrl
+# Tiny Url
 
-**TODO: Add description**
+Tiny Url is helpful in generating a shorter URL with custom domain.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `tiny_url` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `tiny_url` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +14,17 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/tiny_url](https://hexdocs.pm/tiny_url).
+## Usage 
+
+The below command generates shorter URL by taking input long url , custom domain and unique Id for avoiding duplicate issues
+
+```elixir
+TinyUrl.Encode.encode("https://confluence.domain.com/display/CTL/New+Workflow+Diagram1","erllabs.com",3)
+```
+## Output
+```elixir
+"erllabs.com/mpcMbe7Q"
+```
+## Copyright and License
+(c) 2018, Erllabs private Limited.
 
